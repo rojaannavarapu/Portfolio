@@ -1,0 +1,58 @@
+.contact {
+  padding: 60px 0 20px;
+  position: relative;
+}
+
+.contact-content.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 1rem;
+}
+
+.contact-info {
+  text-align: center;
+  max-width: 600px;
+}
+
+.contact-intro.text-center {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  color: var(--text);
+  backdrop-filter: var(--blur);
+  transition: all 0.3s ease;
+}
+
+.social-icon-btn:hover {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 20px var(--glow-primary);
+}
+
+@media (max-width: 640px) {
+  .social-icon-btn {
+    width: 50px;
+    height: 50px;
+  }
+}
